@@ -3,7 +3,7 @@ function dechiffre($code) {
         $numKey = (strlen($code)/2);
         $_chain = substr($code, 5, $numKey);
         $_chainEnd = str_replace('@#?', ' ', $_chain);
-        return strrev ($_chainEnd);
+        return strrev($_chainEnd);
 }
 echo dechiffre("0@sn9sirppa@#?ia'jgtvryko1")." ";
 echo dechiffre("q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj")." ";
