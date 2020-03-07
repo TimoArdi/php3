@@ -1,7 +1,7 @@
 <?php
 function dechiffre($code) {
         $numKey = (strlen($code)/2);
-        $_chain = substr($code, 5, $numKey );
+        $_chain = substr($code, 5, $numKey);
         $_chainEnd = str_replace('@#?', ' ', $_chain);
         return strrev ($_chainEnd);
 }
